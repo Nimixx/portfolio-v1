@@ -7,8 +7,7 @@ const projects = [
       "Menší projekt, který jsem vytvořil v rámci výuky Reactu. Jedná se o jednoduchou aplikaci, která pomocí GitHub API vyhledává uživatele a zobrazuje jejich profilové informace. Dále je možné zobrazit uživatelovy repozitáře a podrobnější informace o nich. Design pochází z challenge na stránce Frontend Mentor.",
     technologies: ["React", "TypeScript", "TailwindCSS"],
     githubLink: "https://github.com/project1",
-    bgImage:
-      "bg-[url(./static/images/devFinder-light.png)] dark:bg-[url(./static/images/devFinder-dark.png)]",
+    bgImage: "",
   },
   {
     title: "NIMIXX",
@@ -16,8 +15,7 @@ const projects = [
       "Moje osobní portfolio, které jsi právě prohlížíš. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.",
     technologies: ["React", "TypeScript", "TailwindCSS", "shadcnui"],
     githubLink: "https://github.com/project2",
-    bgImage:
-      "bg-[url(./static/images/nimixx-light.png)] dark:bg-[url(./static/images/nimixx-dark.png)]",
+    bgImage: "",
   },
 ];
 const technologyColors: Record<string, string> = {
@@ -37,7 +35,7 @@ export default function Projects() {
       {projects.map((project, index) => (
         <article key={index} className="grid grid-cols-1 xl:grid-cols-2 gap-10">
           <div
-            className={`relative h-32 xl:h-full rounded-xl bg-[url(./static/images/nimixx-light.png)] bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-hidden shadow-lg group border border-zinc-200 dark:border-zinc-700`}
+            className={`relative h-32 xl:h-full rounded-xl bg-nimixxLight bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-hidden shadow-lg group border border-zinc-200 dark:border-zinc-700`}
           >
             <a
               className={`w-full h-full absolute top-0 left-0 right-0 text-4xl font-bold flex justify-center items-center`}
