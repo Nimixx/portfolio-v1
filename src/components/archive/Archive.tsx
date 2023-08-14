@@ -64,7 +64,10 @@ export default function Archive() {
             <TableRow key={project.name}>
               <TableCell className="font-medium">{project.name}</TableCell>
               <TableCell>
-                <a className="text-gray-600" href={project.link}>
+                <a
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
+                  href={project.link}
+                >
                   {project.github}
                 </a>
               </TableCell>

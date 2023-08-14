@@ -24,3 +24,13 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(209, 209, 209);
   border-radius: 1rem;
 }
+
+.header-show {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
