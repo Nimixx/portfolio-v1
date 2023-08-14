@@ -61,7 +61,7 @@ export default function Projects() {
                 <Github />
               </a>
               <a href={project.liveWebLink}>
-                <Globe2 />
+                <Globe2 className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
               </a>
             </section>
             <p className="text-gray-600 dark:text-gray-400">
