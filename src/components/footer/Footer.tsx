@@ -2,7 +2,7 @@ import { Heart, Atom, Play } from "lucide-react";
 import Social from "../header/Social";
 
 const links = {
-  "Co mám rád": [
+  Sleduji: [
     { text: "Kevin Powell", url: "https://www.youtube.com/@KevinPowell" },
     { text: "Josh W Comeau", url: "https://www.joshwcomeau.com/tutorials/" },
     { text: "Theo T3", url: "https://www.youtube.com/@t3dotgg" },
@@ -12,14 +12,14 @@ const links = {
     },
     { text: "System 79", url: "https://pop.system76.com/" },
   ],
-  "Skvělé technologie": [
+  Oblíbené: [
     { text: "React", url: "https://reactjs.org/" },
     { text: "Next.js", url: "https://nextjs.org/" },
     { text: "Astro", url: "https://astro.build/" },
     { text: "Tailwind CSS", url: "https://tailwindcss.com/" },
     { text: "Vite", url: "https://vitejs.dev/" },
   ],
-  "Poslech k práci": [
+  Poslouchám: [
     { text: "Chris Luno", url: "https://www.youtube.com/@chrisluno" },
     {
       text: "Nora En Puro",
