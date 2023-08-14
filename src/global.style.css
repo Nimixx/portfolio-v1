@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.code-block {
+    font-family: 'Courier New', monospace;
+    white-space: pre;
+  }
+  
