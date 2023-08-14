@@ -3,10 +3,11 @@ export default function Hero() {
     <section className="w-full  bg-gradient-to-b from-white to-slate-200 dark:from-zinc-950 dark:to-slate-900 relative">
       <article className="w-full h-96 xl:w-1/2 m-auto left-0 right-0 hidden xl:absolute xl:flex items-start flex-col justify-center">
         <h2 className="text-6xl font-extrabold uppercase text-slate-600 dark:text-slate-300">
-          <span className="text-orange-300 dark:text-indigo-400">{"{"}</span>Tadeas
+          <span className="text-orange-300 dark:text-indigo-400">{"{"}</span>
+          Tadeas
           <span className="text-orange-300 dark:text-indigo-400">{"}"}</span>
         </h2>
-        <h6 className="text-xl text-gray-600 dark:text-gray-400">
+        <h6 className="text-2xl text-gray-600 dark:text-gray-400">
           Junior Front End Developer
         </h6>
       </article>

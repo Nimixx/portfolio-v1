@@ -7,7 +7,8 @@ const projects = [
       "Menší projekt, který jsem vytvořil v rámci výuky Reactu. Jedná se o jednoduchou aplikaci, která pomocí GitHub API vyhledává uživatele a zobrazuje jejich profilové informace. Dále je možné zobrazit uživatelovy repozitáře a podrobnější informace o nich. Design pochází z challenge na stránce Frontend Mentor.",
     technologies: ["React", "TypeScript", "TailwindCSS"],
     githubLink: "https://github.com/project1",
-    bgImage: "bg-[url(devFinder-light.png)] dark:bg-[url(devFinder-dark.png)]",
+    bgImage:
+      "bg-[url(./static/images/devFinder-light.png)] dark:bg-[url(./static/images/devFinder-dark.png)]",
   },
   {
     title: "NIMIXX",
@@ -15,7 +16,8 @@ const projects = [
       "Moje osobní portfolio, které jsi právě prohlížíš. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.",
     technologies: ["React", "TypeScript", "TailwindCSS", "shadcnui"],
     githubLink: "https://github.com/project2",
-    bgImage: "bg-[url(nimixx-light.png)] dark:bg-[url(nimixx-dark.png)]",
+    bgImage:
+      "bg-[url(./static/images/nimixx-light.png)] dark:bg-[url(./static/images/nimixx-dark.png)]",
   },
 ];
 const technologyColors: Record<string, string> = {
