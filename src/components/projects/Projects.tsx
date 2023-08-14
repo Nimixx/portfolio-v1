@@ -35,7 +35,7 @@ export default function Projects() {
       {projects.map((project, index) => (
         <article key={index} className="grid grid-cols-1 xl:grid-cols-2 gap-10">
           <div
-            className={`relative h-32 xl:h-full rounded-xl bg-nimixxLight bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-hidden shadow-lg group border border-zinc-200 dark:border-zinc-700`}
+            className={`relative h-32 xl:h-full rounded-xl bg-[url(https://cdn.pixabay.com/photo/2023/04/11/16/04/solar-wind-7917659_1280.jpg)] bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-hidden shadow-lg group border border-zinc-200 dark:border-zinc-700`}
           >
             <a
               className={`w-full h-full absolute top-0 left-0 right-0 text-4xl font-bold flex justify-center items-center`}
