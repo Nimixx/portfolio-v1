@@ -3,11 +3,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}', 
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,11 +17,11 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage:{
-        'nimixxDark': 'url(./src/assets/nimixx-dark.png)',
-        'nimixxLight': 'url(./src/assets/nimixx-light.png)',
-        'devFinderDark': 'url(./src/assets/devFinder-dark.png)',
-        'devFinderLight': 'url(./src/assets/devFinder-light.png)',
+      backgroundImage: {
+        nimixxDark: "url(nimixx-dark.png)",
+        nimixxLight: "url(nimixx-light.png)",
+        devFinderDark: "url(devFinder-dark.png)",
+        devFinderLight: "url(devFinder-light.png)",
       },
       keyframes: {
         "accordion-down": {
@@ -41,4 +41,4 @@ module.exports = {
   },
   // eslint-disable-next-line no-undef
   plugins: [require("tailwindcss-animate")],
-}
+};

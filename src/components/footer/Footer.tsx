@@ -1,4 +1,3 @@
-import Avatar from "@/assets/logo.webp";
 import { Heart, Atom, Play } from "lucide-react";
 import Social from "../header/Social";
 
@@ -11,7 +10,7 @@ const links = {
       text: "Linux Experiment",
       url: "https://www.youtube.com/channel/UC5UAwBUum7CPN5buc-_N1Fw",
     },
-    { text: "System 79", url: "https://pop.system76.com/"}
+    { text: "System 79", url: "https://pop.system76.com/" },
   ],
   "Skvělé technologie": [
     { text: "React", url: "https://reactjs.org/" },
@@ -43,12 +42,12 @@ export default function Footer() {
     <footer className="w-full xl:h-96 flex justify-center items-center bg-zinc-200/20 border-t border-zinc-200 dark:border-zinc-900 dark:bg-zinc-900/10 mt-14 px-5 xl:px-0">
       <section className="w-full xl:w-1/2 mx-auto my-5 xl:mt-14 flex flex-col xl:flex-row items-start justify-between gap-5">
         <section className="flex flex-col gap-5 justify-center items-center">
-        <img
-          className="w-20 dark:bg-zinc-800/50 rounded-lg"
-          src={Avatar}
-          alt="Creator draw avatar"
-        />
-        <Social />
+          <img
+            className="w-20 dark:bg-zinc-800/50 rounded-lg"
+            src="logo.webp"
+            alt="Creator draw avatar"
+          />
+          <Social />
         </section>
         {Object.entries(links).map(([category, categoryLinks], index) => (
           <section key={index}>
@@ -78,7 +77,13 @@ export default function Footer() {
             </ul>
           </section>
         ))}
-       <section className="flex gap-2 text-gray-500"><span>&copy;</span>{displayYear} <a className="text-gray-600 dark:text-gray-400" href="/">Nimixx.dev</a></section>
+        <section className="flex gap-2 text-gray-500">
+          <span>&copy;</span>
+          {displayYear}{" "}
+          <a className="text-gray-600 dark:text-gray-400" href="/">
+            Nimixx.dev
+          </a>
+        </section>
       </section>
     </footer>
   );
