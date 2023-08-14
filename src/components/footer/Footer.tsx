@@ -85,8 +85,7 @@ export default function Footer() {
         <section className="flex flex-col items-start justify-start">
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
-            {displayYear}{' '}
-            <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
+            {displayYear} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
           </span>
           <p className="text-gray-500 xl:text-lg">nimixx.dev@proton.me</p>
         </section>

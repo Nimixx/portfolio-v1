@@ -93,13 +93,10 @@ export default function Archive() {
       </Table>
       <section className="text-gray-600 dark:text-gray-400 ">
         <p>
-          Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na
-          mém profilu na platformách jako je{' '}
+          Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
+          platformách jako je{' '}
           <strong className="text-teal-400">
-            <Link
-              link="https://www.frontendmentor.io/profile/Nimixx"
-              target="_blank"
-            >
+            <Link link="https://www.frontendmentor.io/profile/Nimixx" target="_blank">
               Front End Mentor
             </Link>
           </strong>
@@ -115,8 +112,7 @@ export default function Archive() {
               I Code This
             </Link>
           </strong>
-          . Většinou se jedná o komponenty, challenge které jsem si vybral a
-          vytvořil je.
+          . Většinou se jedná o komponenty, challenge které jsem si vybral a vytvořil je.
         </p>
       </section>
     </section>

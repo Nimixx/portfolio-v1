@@ -7,12 +7,7 @@ interface LinkProps {
 
 export default function Link({ children, link, target, className }: LinkProps) {
   return (
-    <a
-      className={className}
-      href={link}
-      target={target}
-      rel="noopener noreferrer"
-    >
+    <a className={className} href={link} target={target} rel="noopener noreferrer">
       {children}
     </a>
   )

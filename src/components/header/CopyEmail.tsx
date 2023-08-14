@@ -1,12 +1,7 @@
 import { Mail } from 'lucide-react'
 import { Button } from '../ui/button'
 import { useToast } from '@/components/ui/use-toast'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
 export default function CopyEmail() {
   const { toast } = useToast()

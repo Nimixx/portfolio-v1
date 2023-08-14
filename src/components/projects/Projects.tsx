@@ -47,11 +47,7 @@ export default function Projects() {
               link={project.liveWebLink}
               target="_blank"
             />
-            <Link
-              className="absolute -right-16 -top-16"
-              link={project.githubLink}
-              target="_blank"
-            >
+            <Link className="absolute -right-16 -top-16" link={project.githubLink} target="_blank">
               <div
                 className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600`}
               />
@@ -63,28 +59,20 @@ export default function Projects() {
           <div className="flex flex-col justify-center space-y-5">
             <h4 className="text-2xl font-bold">{project.title}</h4>
             <section className="flex items-center gap-2">
-              <Link
-                className="block xl:hidden"
-                link={project.githubLink}
-                target="_blank"
-              >
+              <Link className="block xl:hidden" link={project.githubLink} target="_blank">
                 <Github />
               </Link>
               <Link link={project.liveWebLink} target="_blank">
                 <Globe2 className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
               </Link>
             </section>
-            <p className="text-gray-600 dark:text-gray-400">
-              {project.description}
-            </p>
+            <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
             <h6 className="text-xl font-semibold">Technologie</h6>
             <ul className="flex space-x-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
                 <li
                   key={idx}
-                  className={`${
-                    technologyColors[tech] || 'text-gray-600 dark:text-gray-500'
-                  }`}
+                  className={`${technologyColors[tech] || 'text-gray-600 dark:text-gray-500'}`}
                 >
                   <strong>{tech}</strong>
                 </li>

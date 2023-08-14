@@ -17,8 +17,7 @@ export default function Header() {
       const scrollDown = prevScrollPos < currentScrollPos
 
       // Determine the threshold based on the device width
-      const threshold =
-        window.innerWidth < 768 ? mobileThreshold : desktopThreshold
+      const threshold = window.innerWidth < 768 ? mobileThreshold : desktopThreshold
 
       // Show/hide the header based on scroll direction and threshold
       if (scrollDown && visible && currentScrollPos > threshold) {
