@@ -18,10 +18,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        nimixxDark: "url(nimixx-dark.png)",
-        nimixxLight: "url(nimixx-light.png)",
-        devFinderDark: "url(devFinder-dark.png)",
-        devFinderLight: "url(devFinder-light.png)",
+        nimixxDark: "url(./static/images/nimixx-dark.png)",
+        nimixxLight: "url(./static/images/nimixx-light.png)",
+        devFinderDark: "url(./static/images/devFinder-dark.png)",
+        devFinderLight: "url(./static/images/devFinder-light.png)",
       },
       keyframes: {
         "accordion-down": {
