@@ -82,7 +82,7 @@ export default function Footer() {
             </ul>
           </section>
         ))}
-        <section className="flex flex-col items-start justify-start">
+        <section className="flex flex-row xl:flex-col items-start justify-start gap-2">
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
             {displayYear} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>

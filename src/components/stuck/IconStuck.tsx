@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react'
+import { Icon } from '@iconify/react';
 
 const skills = [
   'skill-icons:html',
@@ -18,14 +18,16 @@ const skills = [
   'skill-icons:bash-dark',
   'skill-icons:git',
   'skill-icons:figma-dark',
-]
+];
 
 export default function IconStuck() {
   return (
-    <section className="flex w-full flex-wrap items-center justify-start gap-2  pt-5 md:justify-around">
+    <section className="flex flex-row flex-wrap items-start 2xl:justify-between gap-2 w-full pt-5">
       {skills.map((skill, index) => (
-        <Icon key={index} className="h-10 w-10" icon={skill} />
+        <div key={index} className="w-10 h-10">
+          <Icon icon={skill} width="100%" height="100%" />
+        </div>
       ))}
     </section>
-  )
+  );
 }

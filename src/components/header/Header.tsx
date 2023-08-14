@@ -41,7 +41,7 @@ export default function Header() {
         visible ? 'header-show' : 'header-hide'
       }`}
     >
-      <div className="mx-auto flex h-16 w-full items-center justify-between px-5 xl:w-2/4 xl:px-0">
+      <div className="mx-auto flex h-16 w-full items-center justify-between px-5 lg:w-2/4 lg:px-0">
         <Name />
         <section className="flex items-center gap-2">
           <ThemeToggle />
