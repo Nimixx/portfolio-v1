@@ -1,5 +1,5 @@
 import { Atom } from 'lucide-react'
-import InteractiveStuck from './InteractiveStuck'
+import IconStuck from './IconStuck'
 
 export default function TechStuck() {
   return (
@@ -18,7 +18,7 @@ export default function TechStuck() {
         <strong className="text-zinc-950 dark:text-white">Next.js</strong>,{' '}
         <strong className="text-orange-500">Astro</strong> a plno dalších.
       </p>
-      <InteractiveStuck />
+      <IconStuck />
     </section>
   )
 }

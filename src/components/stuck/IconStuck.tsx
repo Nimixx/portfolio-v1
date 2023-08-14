@@ -20,7 +20,7 @@ const skills = [
   'skill-icons:figma-dark',
 ]
 
-export default function InteractiveStuck() {
+export default function IconStuck() {
   return (
     <section className="flex w-full flex-wrap items-center justify-start gap-2  pt-5 md:justify-around">
       {skills.map((skill, index) => (

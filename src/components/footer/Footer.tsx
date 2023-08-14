@@ -1,5 +1,6 @@
 import { Heart, Atom, Play } from 'lucide-react'
 import Social from '../header/Social'
+import Link from '../ui/link'
 
 const links = {
   Sleduji: [
@@ -69,12 +70,13 @@ export default function Footer() {
             <ul className="mt-2 flex flex-col gap-2 text-gray-600 dark:text-gray-400">
               {categoryLinks.map((link, linkIndex) => (
                 <li key={linkIndex}>
-                  <a
+                  <Link
                     className="flex items-center gap-1 hover:text-gray-900 dark:hover:text-gray-300"
-                    href={link.url}
+                    link={link.url}
+                    target="_blank"
                   >
                     {link.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -84,11 +86,9 @@ export default function Footer() {
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
             {displayYear}{' '}
-            <a className="text-gray-600 dark:text-gray-400" href="/">
-              Nimixx.dev
-            </a>
+            <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
           </span>
-          <p className="text-gray-500">nimixx.dev@proton.me</p>
+          <p className="text-gray-500 xl:text-lg">nimixx.dev@proton.me</p>
         </section>
       </section>
     </footer>

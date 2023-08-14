@@ -1,4 +1,5 @@
 import { Code2, Github, Globe2 } from 'lucide-react'
+import Link from '../ui/link'
 
 const projects = [
   {
@@ -41,28 +42,37 @@ export default function Projects() {
           <div
             className={`relative h-32 rounded-xl xl:h-full ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 xl:flex`}
           >
-            <a
+            <Link
               className={`absolute left-0 right-0 top-0 flex h-full w-full items-center justify-center text-4xl font-bold`}
-              href={project.liveWebLink}
+              link={project.liveWebLink}
+              target="_blank"
             />
-            <a className="absolute -right-16 -top-16" href={project.githubLink}>
+            <Link
+              className="absolute -right-16 -top-16"
+              link={project.githubLink}
+              target="_blank"
+            >
               <div
                 className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600`}
               />
               <Github
                 className={`pointer-events-none absolute bottom-5 left-6 h-8 w-8 text-zinc-200`}
               />
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col justify-center space-y-5">
             <h4 className="text-2xl font-bold">{project.title}</h4>
             <section className="flex items-center gap-2">
-              <a className="block xl:hidden" href={project.githubLink}>
+              <Link
+                className="block xl:hidden"
+                link={project.githubLink}
+                target="_blank"
+              >
                 <Github />
-              </a>
-              <a href={project.liveWebLink}>
+              </Link>
+              <Link link={project.liveWebLink} target="_blank">
                 <Globe2 className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
-              </a>
+              </Link>
             </section>
             <p className="text-gray-600 dark:text-gray-400">
               {project.description}

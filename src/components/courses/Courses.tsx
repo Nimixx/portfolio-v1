@@ -1,4 +1,5 @@
 import { Wallpaper } from 'lucide-react'
+import Link from '../ui/link'
 
 const courses = [
   {
@@ -33,12 +34,16 @@ export default function Courses() {
       <ul className="flex flex-col items-start justify-start gap-2 text-gray-600 dark:text-gray-400">
         {courses.map((course, index) => (
           <li key={index} className="flex items-center space-x-2">
-            <a href={course.url} className="text-zinc-950 dark:text-white ">
+            <Link
+              link={course.url}
+              target="_blank"
+              className="text-zinc-950 dark:text-white "
+            >
               <strong>{course.name}</strong> - Kompletní kurz od{' '}
               <strong className="text-blue-500 dark:text-indigo-400">
                 {course.instructor}
               </strong>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

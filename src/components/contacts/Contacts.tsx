@@ -1,4 +1,5 @@
 import { Contact2 } from 'lucide-react'
+import Link from '../ui/link'
 
 export default function Contacts() {
   return (
@@ -12,8 +13,15 @@ export default function Contacts() {
         spolupráci, neváhejte mě kontaktovat na{' '}
         <strong className="text-zinc-950 dark:text-white">Emailu</strong> nebo
         pomocí{' '}
-        <strong className="text-blue-500 dark:text-blue-400">LinkedIn</strong>.
-        Aktuálně hledám práci jako{' '}
+        <strong className="text-blue-500 dark:text-blue-400">
+          <Link
+            link="https://www.linkedin.com/in/tadeasthelen/"
+            target="_blank"
+          >
+            LinkedIn
+          </Link>
+        </strong>
+        . Aktuálně hledám práci jako{' '}
         <strong className="text-amber-500 dark:text-amber-300">
           Frontend Developer
         </strong>
@@ -21,3 +29,5 @@ export default function Contacts() {
     </section>
   )
 }
+
+//TODO Think about email functionality here

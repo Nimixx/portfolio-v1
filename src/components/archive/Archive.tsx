@@ -1,4 +1,5 @@
 import { FolderGit2, Github } from 'lucide-react'
+import Link from '../ui/link'
 import {
   Table,
   TableBody,
@@ -64,17 +65,19 @@ export default function Archive() {
             <TableRow key={project.name}>
               <TableCell className="font-medium">{project.name}</TableCell>
               <TableCell>
-                <a
+                <Link
                   className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                  href={project.link}
+                  link={project.link}
+                  target="_blank"
                 >
                   {project.github}
-                </a>
+                </Link>
               </TableCell>
               <TableCell>{project.description}</TableCell>
               <TableCell className="text-right text-sky-400">
-                <a
-                  href={project.statusLink}
+                <Link
+                  link={project.statusLink}
+                  target="_blank"
                   className={
                     project.statusLink === '/'
                       ? 'pointer-events-none text-rose-500 dark:text-rose-400 '
@@ -82,7 +85,7 @@ export default function Archive() {
                   }
                 >
                   <strong>{project.status}</strong>
-                </a>
+                </Link>
               </TableCell>
             </TableRow>
           ))}
@@ -93,15 +96,24 @@ export default function Archive() {
           Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na
           mém profilu na platformách jako je{' '}
           <strong className="text-teal-400">
-            <a href="/">Front End Mentor</a>
+            <Link
+              link="https://www.frontendmentor.io/profile/Nimixx"
+              target="_blank"
+            >
+              Front End Mentor
+            </Link>
           </strong>
           ,{' '}
           <strong className="text-amber-400">
-            <a href="/">Codepen</a>
+            <Link link="https://codepen.io/nimixx" target="_blank">
+              Codepen
+            </Link>
           </strong>{' '}
           nebo třeba{' '}
           <strong className="text-sky-400">
-            <a href="/">I Code This</a>
+            <Link link="https://icodethis.com/Nimixx" target="_blank">
+              I Code This
+            </Link>
           </strong>
           . Většinou se jedná o komponenty, challenge které jsem si vybral a
           vytvořil je.
