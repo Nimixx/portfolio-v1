@@ -45,7 +45,7 @@ const projects = [
 
 export default function Archive() {
   return (
-    <section className="mt-14 mt-14 flex w-full flex-col items-start space-y-5">
+    <section className="mt-14 flex w-full flex-col items-start space-y-5">
       <h2 className="flex items-center space-x-2 text-2xl font-bold">
         <FolderGit2 className="text-rose-500 dark:text-rose-300" />
         <span>Archív</span>

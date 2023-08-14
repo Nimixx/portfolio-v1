@@ -91,7 +91,6 @@ export default function Footer() {
           <p className="text-gray-500">nimixx.dev@proton.me</p>
         </section>
       </section>
-      ahoj
     </footer>
   )
 }
