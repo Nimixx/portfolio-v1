@@ -7,7 +7,8 @@ const projects = [
       "Menší projekt, který jsem vytvořil v rámci výuky Reactu. Jedná se o jednoduchou aplikaci, která pomocí GitHub API vyhledává uživatele a zobrazuje jejich profilové informace. Dále je možné zobrazit uživatelovy repozitáře a podrobnější informace o nich. Design pochází z challenge na stránce Frontend Mentor.",
     technologies: ["React", "TypeScript", "TailwindCSS"],
     githubLink: "https://github.com/project1",
-    bgImage: "",
+    bgImage:
+      "bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/devFinder-light.png?updatedAt=1692008333169)] dark:bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/devFinder-dark.png?updatedAt=1692008333235)]",
   },
   {
     title: "NIMIXX",
