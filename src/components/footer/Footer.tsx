@@ -44,7 +44,7 @@ const displayYear = year > 2022 ? `2022 - ${year}` : year
 export default function Footer() {
   return (
     <footer className="mt-14 flex w-full items-center justify-center border-t border-zinc-200 bg-zinc-200/20 px-5 dark:border-zinc-900 dark:bg-zinc-900/10 xl:h-96 xl:px-0">
-      <section className="mx-auto my-5 flex w-full flex-col items-start justify-between gap-5 xl:mt-14 xl:w-1/2 xl:flex-row">
+      <section className="mx-auto my-5 flex w-full flex-col items-start justify-between gap-5 xl:mt-14 lg:w-2/3 2xl:w-1/2 lg:flex-row">
         <section className="flex flex-col items-center justify-center gap-5">
           <img
             className="w-20 rounded-lg dark:bg-zinc-800/50"
@@ -82,7 +82,7 @@ export default function Footer() {
             </ul>
           </section>
         ))}
-        <section className="flex flex-row xl:flex-col items-start justify-start gap-2">
+        <section className="flex flex-row lg:flex-col items-start justify-start gap-2">
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
             {displayYear} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>

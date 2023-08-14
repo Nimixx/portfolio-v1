@@ -38,9 +38,9 @@ export default function Projects() {
         <span>Projekty</span>
       </h2>
       {projects.map((project, index) => (
-        <article key={index} className="grid grid-cols-1 gap-10 xl:grid-cols-2">
+        <article key={index} className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div
-            className={`relative h-32 rounded-xl xl:h-full ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 xl:flex`}
+            className={`relative h-32 rounded-xl lg:h-full ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 lg:flex`}
           >
             <Link
               className={`absolute left-0 right-0 top-0 flex h-full w-full items-center justify-center text-4xl font-bold`}
@@ -68,7 +68,7 @@ export default function Projects() {
             </section>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
             <h6 className="text-xl font-semibold">Technologie</h6>
-            <ul className="flex space-x-5 text-gray-600 dark:text-gray-500">
+            <ul className="flex items-center justify-start gap-5 text-gray-600 dark:text-gray-500 flex-wrap">
               {project.technologies.map((tech, idx) => (
                 <li
                   key={idx}

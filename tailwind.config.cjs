@@ -33,5 +33,5 @@ module.exports = {
       },
     },
   },
-  plugins: [import('tailwindcss-animate'), import('prettier-plugin-tailwindcss')],
+  plugins: [require('tailwindcss-animate', 'prettier-plugin-tailwindcss')],
 }
