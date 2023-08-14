@@ -1,10 +1,10 @@
-import { Paperclip } from "lucide-react";
+import { Paperclip } from 'lucide-react'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip'
 
 export default function Resume() {
   return (
@@ -23,5 +23,5 @@ export default function Resume() {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  );
+  )
 }

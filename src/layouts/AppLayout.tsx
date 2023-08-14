@@ -1,8 +1,8 @@
-import Footer from "@/components/footer/Footer";
-import Header from "../components/header/Header";
+import Footer from '@/components/footer/Footer'
+import Header from '../components/header/Header'
 
 interface AppLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function AppLayout({ children }: AppLayoutProps) {
@@ -12,5 +12,5 @@ export default function AppLayout({ children }: AppLayoutProps) {
       {children}
       <Footer />
     </article>
-  );
+  )
 }

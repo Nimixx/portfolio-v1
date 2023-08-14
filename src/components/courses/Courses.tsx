@@ -1,22 +1,22 @@
-import { Wallpaper } from "lucide-react";
+import { Wallpaper } from 'lucide-react'
 
 const courses = [
   {
-    name: "JoyForReact",
-    url: "https://www.joyofreact.com/",
-    instructor: "Josh W Comeau",
+    name: 'JoyForReact',
+    url: 'https://www.joyofreact.com/',
+    instructor: 'Josh W Comeau',
   },
   {
-    name: "HTML, CSS a JavaScript",
-    url: "https://www.joyofreact.com/",
-    instructor: "Jonas Schmedtmann",
+    name: 'HTML, CSS a JavaScript',
+    url: 'https://www.joyofreact.com/',
+    instructor: 'Jonas Schmedtmann',
   },
   {
-    name: "Sass & Animation",
-    url: "https://www.joyofreact.com/",
-    instructor: "Jonas Schmedtmann",
+    name: 'Sass & Animation',
+    url: 'https://www.joyofreact.com/',
+    instructor: 'Jonas Schmedtmann',
   },
-];
+]
 
 export default function Courses() {
   return (
@@ -34,7 +34,7 @@ export default function Courses() {
         {courses.map((course, index) => (
           <li key={index} className="flex items-center space-x-2">
             <a href={course.url} className="text-zinc-950 dark:text-white ">
-              <strong>{course.name}</strong> - Kompletní kurz od{" "}
+              <strong>{course.name}</strong> - Kompletní kurz od{' '}
               <strong className="text-blue-500 dark:text-indigo-400">
                 {course.instructor}
               </strong>
@@ -43,5 +43,5 @@ export default function Courses() {
         ))}
       </ul>
     </section>
-  );
+  )
 }

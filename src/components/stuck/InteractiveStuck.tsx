@@ -1,24 +1,24 @@
-import { Icon } from "@iconify/react";
+import { Icon } from '@iconify/react'
 
 const skills = [
-  "skill-icons:html",
-  "skill-icons:css",
-  "skill-icons:javascript",
-  "skill-icons:typescript",
-  "skill-icons:sass",
-  "skill-icons:react-dark",
-  "skill-icons:nextjs-dark",
-  "skill-icons:astro",
-  "skill-icons:tailwindcss-dark",
-  "skill-icons:emotion-dark",
-  "skill-icons:materialui-dark",
-  "skill-icons:graphql-dark",
-  "skill-icons:redux",
-  "skill-icons:vercel-dark",
-  "skill-icons:bash-dark",
-  "skill-icons:git",
-  "skill-icons:figma-dark",
-];
+  'skill-icons:html',
+  'skill-icons:css',
+  'skill-icons:javascript',
+  'skill-icons:typescript',
+  'skill-icons:sass',
+  'skill-icons:react-dark',
+  'skill-icons:nextjs-dark',
+  'skill-icons:astro',
+  'skill-icons:tailwindcss-dark',
+  'skill-icons:emotion-dark',
+  'skill-icons:materialui-dark',
+  'skill-icons:graphql-dark',
+  'skill-icons:redux',
+  'skill-icons:vercel-dark',
+  'skill-icons:bash-dark',
+  'skill-icons:git',
+  'skill-icons:figma-dark',
+]
 
 export default function InteractiveStuck() {
   return (
@@ -27,5 +27,5 @@ export default function InteractiveStuck() {
         <Icon key={index} className="w-10 h-10" icon={skill} />
       ))}
     </section>
-  );
+  )
 }

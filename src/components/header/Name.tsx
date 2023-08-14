@@ -1,4 +1,4 @@
-import Social from "./Social";
+import Social from './Social'
 
 export default function Name() {
   return (
@@ -8,5 +8,5 @@ export default function Name() {
       </h1>
       <Social />
     </section>
-  );
+  )
 }

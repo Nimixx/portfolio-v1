@@ -1,41 +1,44 @@
-import { Heart, Atom, Play } from "lucide-react";
-import Social from "../header/Social";
+import { Heart, Atom, Play } from 'lucide-react'
+import Social from '../header/Social'
 
 const links = {
   Sleduji: [
-    { text: "Kevin Powell", url: "https://www.youtube.com/@KevinPowell" },
-    { text: "Josh W Comeau", url: "https://www.joshwcomeau.com/tutorials/" },
-    { text: "Theo T3", url: "https://www.youtube.com/@t3dotgg" },
+    { text: 'Kevin Powell', url: 'https://www.youtube.com/@KevinPowell' },
     {
-      text: "Linux Experiment",
-      url: "https://www.youtube.com/channel/UC5UAwBUum7CPN5buc-_N1Fw",
+      text: 'Josh W Comeau',
+      url: 'https://www.joshwcomeau.com/tutorials/',
     },
-    { text: "System 79", url: "https://pop.system76.com/" },
+    { text: 'Theo T3', url: 'https://www.youtube.com/@t3dotgg' },
+    {
+      text: 'Linux Experiment',
+      url: 'https://www.youtube.com/channel/UC5UAwBUum7CPN5buc-_N1Fw',
+    },
+    { text: 'System 79', url: 'https://pop.system76.com/' },
   ],
   Oblíbené: [
-    { text: "React", url: "https://reactjs.org/" },
-    { text: "Next.js", url: "https://nextjs.org/" },
-    { text: "Astro", url: "https://astro.build/" },
-    { text: "Tailwind CSS", url: "https://tailwindcss.com/" },
-    { text: "Vite", url: "https://vitejs.dev/" },
+    { text: 'React', url: 'https://reactjs.org/' },
+    { text: 'Next.js', url: 'https://nextjs.org/' },
+    { text: 'Astro', url: 'https://astro.build/' },
+    { text: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
+    { text: 'Vite', url: 'https://vitejs.dev/' },
   ],
   Poslouchám: [
-    { text: "Chris Luno", url: "https://www.youtube.com/@chrisluno" },
+    { text: 'Chris Luno', url: 'https://www.youtube.com/@chrisluno' },
     {
-      text: "Nora En Puro",
-      url: "https://www.youtube.com/channel/UCdUXAN90UQV4sxNehj5Vflw",
+      text: 'Nora En Puro',
+      url: 'https://www.youtube.com/channel/UCdUXAN90UQV4sxNehj5Vflw',
     },
-    { text: "Flavour Trip", url: "https://www.youtube.com/@flavourtrip" },
-    { text: "Sylvan Esso", url: "https://www.youtube.com/@sylvanesso" },
+    { text: 'Flavour Trip', url: 'https://www.youtube.com/@flavourtrip' },
+    { text: 'Sylvan Esso', url: 'https://www.youtube.com/@sylvanesso' },
     {
-      text: "Rachel K Collier",
-      url: "https://www.youtube.com/@RachelKCollierRKC",
+      text: 'Rachel K Collier',
+      url: 'https://www.youtube.com/@RachelKCollierRKC',
     },
   ],
-};
+}
 
-const year = new Date().getFullYear();
-const displayYear = year > 2022 ? `2022 - ${year}` : year;
+const year = new Date().getFullYear()
+const displayYear = year > 2022 ? `2022 - ${year}` : year
 
 export default function Footer() {
   return (
@@ -80,7 +83,7 @@ export default function Footer() {
         <section className="flex flex-col items-start justify-start">
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
-            {displayYear}{" "}
+            {displayYear}{' '}
             <a className="text-gray-600 dark:text-gray-400" href="/">
               Nimixx.dev
             </a>
@@ -88,6 +91,7 @@ export default function Footer() {
           <p className="text-gray-500">nimixx.dev@proton.me</p>
         </section>
       </section>
+      ahoj
     </footer>
-  );
+  )
 }

@@ -1,25 +1,25 @@
-import { Mail } from "lucide-react";
-import { Button } from "../ui/button";
-import { useToast } from "@/components/ui/use-toast";
+import { Mail } from 'lucide-react'
+import { Button } from '../ui/button'
+import { useToast } from '@/components/ui/use-toast'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip'
 
 export default function CopyEmail() {
-  const { toast } = useToast();
+  const { toast } = useToast()
 
   const copyEmailToClipboard = () => {
-    const email = "nimixx.dev@proton.me";
+    const email = 'nimixx.dev@proton.me'
     navigator.clipboard.writeText(email).then(() => {
       toast({
-        title: "Email zkopírován do schránky",
+        title: 'Email zkopírován do schránky',
         description: email,
-      });
-    });
-  };
+      })
+    })
+  }
 
   return (
     <TooltipProvider>
@@ -34,5 +34,5 @@ export default function CopyEmail() {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  );
+  )
 }
