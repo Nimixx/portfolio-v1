@@ -77,12 +77,15 @@ export default function Footer() {
             </ul>
           </section>
         ))}
-        <section className="flex gap-2 text-gray-500">
-          <span>&copy;</span>
-          {displayYear}{" "}
-          <a className="text-gray-600 dark:text-gray-400" href="/">
-            Nimixx.dev
-          </a>
+        <section className="flex flex-col items-start justify-start">
+          <span className="flex gap-2 text-gray-500">
+            <span>&copy;</span>
+            {displayYear}{" "}
+            <a className="text-gray-600 dark:text-gray-400" href="/">
+              Nimixx.dev
+            </a>
+          </span>
+          <p className="text-gray-500">nimixx.dev@proton.me</p>
         </section>
       </section>
     </footer>

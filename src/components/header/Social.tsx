@@ -1,10 +1,10 @@
-import { Github, Linkedin, Twitter} from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Social() {
   return (
     <ul className=" flex items-center gap-2 text-gray-500 dark:text-gray-400">
       <li>
-        <a  href="https://github.com/Nimixx">
+        <a href="https://github.com/Nimixx">
           <Github className="w-5 h-5 hover:text-zinc-950 dark:hover:text-white" />
         </a>
       </li>
@@ -14,7 +14,7 @@ export default function Social() {
         </a>
       </li>
       <li>
-        <a href="/">
+        <a href="https://www.linkedin.com/in/tadeasthelen/">
           <Linkedin className="w-5 h-5 hover:text-zinc-950 dark:hover:text-white" />
         </a>
       </li>

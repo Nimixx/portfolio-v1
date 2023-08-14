@@ -1,5 +1,6 @@
 import CopyEmail from "./CopyEmail";
 import Name from "./Name";
+import Resume from "./Resume";
 import { ThemeToggle } from "./ThemeToggle";
 
 export default function Header() {
@@ -8,8 +9,9 @@ export default function Header() {
       <div className="w-full h-16 xl:w-2/4 mx-auto flex justify-between items-center px-5 xl:px-0">
         <Name />
         <section className="flex items-center gap-2">
-        <ThemeToggle />
-        <CopyEmail />
+          <ThemeToggle />
+          <CopyEmail />
+          <Resume />
         </section>
       </div>
     </header>
