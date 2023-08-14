@@ -5,7 +5,7 @@ interface ContentLayoutProps {
 export default function ContentLayout({ children }: ContentLayoutProps) {
   return (
     <div className="w-full">
-      <div className="w-full xl:w-1/2 mx-auto px-5 xl:px-0">{children}</div>
+      <div className="mx-auto w-full px-5 xl:w-1/2 xl:px-0">{children}</div>
     </div>
   )
 }

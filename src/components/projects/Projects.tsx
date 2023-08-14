@@ -31,26 +31,26 @@ const technologyColors: Record<string, string> = {
 
 export default function Projects() {
   return (
-    <section className="w-full mt-14 flex flex-col gap-10">
-      <h2 className="text-2xl font-bold flex items-center space-x-2 -mb-5">
+    <section className="mt-14 flex w-full flex-col gap-10">
+      <h2 className="-mb-5 flex items-center space-x-2 text-2xl font-bold">
         <Code2 className="text-teal-500 dark:text-teal-300" />
         <span>Projekty</span>
       </h2>
       {projects.map((project, index) => (
-        <article key={index} className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+        <article key={index} className="grid grid-cols-1 gap-10 xl:grid-cols-2">
           <div
-            className={`relative h-32 xl:h-full rounded-xl ${project.bgImage} bg-no-repeat bg-center bg-cover justify-center items-center overflow-hidden shadow-lg group border border-zinc-200 dark:border-zinc-700 hidden xl:flex`}
+            className={`relative h-32 rounded-xl xl:h-full ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 xl:flex`}
           >
             <a
-              className={`w-full h-full absolute top-0 left-0 right-0 text-4xl font-bold flex justify-center items-center`}
+              className={`absolute left-0 right-0 top-0 flex h-full w-full items-center justify-center text-4xl font-bold`}
               href={project.liveWebLink}
             />
-            <a className="absolute -top-16 -right-16" href={project.githubLink}>
+            <a className="absolute -right-16 -top-16" href={project.githubLink}>
               <div
-                className={`w-32 h-32 bg-zinc-400 dark:bg-zinc-700  rotate-45 hover:bg-zinc-500 dark:hover:bg-zinc-600 relative`}
+                className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600`}
               />
               <Github
-                className={`w-8 h-8 absolute bottom-5 left-6 text-zinc-200 pointer-events-none`}
+                className={`pointer-events-none absolute bottom-5 left-6 h-8 w-8 text-zinc-200`}
               />
             </a>
           </div>

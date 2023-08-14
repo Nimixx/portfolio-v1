@@ -3,8 +3,8 @@ import InteractiveStuck from './InteractiveStuck'
 
 export default function TechStuck() {
   return (
-    <section className="w-full flex flex-col items-start space-y-5 mt-14">
-      <h2 className="text-2xl font-bold flex items-center space-x-2">
+    <section className="mt-14 flex w-full flex-col items-start space-y-5">
+      <h2 className="flex items-center space-x-2 text-2xl font-bold">
         <Atom className="text-purple-500 dark:text-purple-300" />
         <span>Technologie</span>
       </h2>

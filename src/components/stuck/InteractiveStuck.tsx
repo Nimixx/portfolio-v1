@@ -22,9 +22,9 @@ const skills = [
 
 export default function InteractiveStuck() {
   return (
-    <section className="w-full flex justify-start md:justify-around gap-2 items-center  flex-wrap pt-5">
+    <section className="flex w-full flex-wrap items-center justify-start gap-2  pt-5 md:justify-around">
       {skills.map((skill, index) => (
-        <Icon key={index} className="w-10 h-10" icon={skill} />
+        <Icon key={index} className="h-10 w-10" icon={skill} />
       ))}
     </section>
   )

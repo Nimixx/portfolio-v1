@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="w-full  bg-gradient-to-b from-white to-slate-200 dark:from-zinc-950 dark:to-slate-900 relative">
-      <article className="w-full h-96 xl:w-1/2 m-auto left-0 right-0 hidden xl:absolute xl:flex items-start flex-col justify-center">
+    <section className="relative  w-full bg-gradient-to-b from-white to-slate-200 dark:from-zinc-950 dark:to-slate-900">
+      <article className="left-0 right-0 m-auto hidden h-96 w-full flex-col items-start justify-center xl:absolute xl:flex xl:w-1/2">
         <h2 className="text-6xl font-extrabold uppercase text-slate-600 dark:text-slate-300">
           <span className="text-orange-300 dark:text-indigo-400">{'{'}</span>
           Tadeas

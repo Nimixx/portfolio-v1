@@ -20,8 +20,8 @@ const courses = [
 
 export default function Courses() {
   return (
-    <section className="w-full mt-14 space-y-5">
-      <h2 className="text-2xl font-bold flex items-center space-x-2">
+    <section className="mt-14 w-full space-y-5">
+      <h2 className="flex items-center space-x-2 text-2xl font-bold">
         <Wallpaper className="text-emerald-500 dark:text-emerald-300" />
         <span>Kurzy</span>
       </h2>
@@ -30,7 +30,7 @@ export default function Courses() {
         Některé věci jsem se naučil z kurzů, případně z článků a videí na
         internetu.
       </p>
-      <ul className="text-gray-600 dark:text-gray-400 flex flex-col items-start justify-start gap-2">
+      <ul className="flex flex-col items-start justify-start gap-2 text-gray-600 dark:text-gray-400">
         {courses.map((course, index) => (
           <li key={index} className="flex items-center space-x-2">
             <a href={course.url} className="text-zinc-950 dark:text-white ">
