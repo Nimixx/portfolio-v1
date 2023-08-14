@@ -12,9 +12,9 @@ const projects = [
   {
     name: "Social Dashboard",
     github: <Github />,
-    link: "https://social-dashboard-ten.vercel.app/",
-    status: "Live",
-    statusLink: "https://social-dashboard-ten.vercel.app/",
+    link: "https://github.com/Nimixx/Social-Dashboard",
+    status: "In progress",
+    statusLink: "/",
     description: "Challenge z Frontend Mentor",
   },
   {
@@ -22,23 +22,23 @@ const projects = [
     github: <Github />,
     link: "/",
     status: "In progress",
-    statusLink: "https://social-dashboard-ten.vercel.app/",
+    statusLink: "/",
     description: "Challenge z Frontend Mentor",
   },
   {
     name: "Score card",
     github: <Github />,
-    link: "https://social-dashboard-ten.vercel.app/",
+    link: "https://github.com/Nimixx/Summary-card-component",
     status: "Live",
-    statusLink: "https://social-dashboard-ten.vercel.app/",
+    statusLink: "https://nimixx.github.io/Summary-card-component/",
     description: "Challenge z Frontend Mentor",
   },
   {
     name: "QR Code",
     github: <Github />,
-    link: "https://social-dashboard-ten.vercel.app/",
+    link: "https://github.com/Nimixx/QR-Code",
     status: "Live",
-    statusLink: "https://social-dashboard-ten.vercel.app/",
+    statusLink: "https://nimixx.github.io/QR-Code/",
     description: "Challenge z Frontend Mentor",
   },
 ];
@@ -64,14 +64,19 @@ export default function Archive() {
             <TableRow key={project.name}>
               <TableCell className="font-medium">{project.name}</TableCell>
               <TableCell>
-                <a href={project.link}>{project.github}</a>
+                <a
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
+                  href={project.link}
+                >
+                  {project.github}
+                </a>
               </TableCell>
               <TableCell>{project.description}</TableCell>
               <TableCell className="text-right text-sky-400">
                 <a
                   href={project.statusLink}
                   className={
-                    project.link === "/"
+                    project.statusLink === "/"
                       ? "text-rose-500 dark:text-rose-400 pointer-events-none"
                       : "text-blue-500 dark:text-sky-400"
                   }
@@ -85,8 +90,21 @@ export default function Archive() {
       </Table>
       <section className="text-gray-600 dark:text-gray-400">
         <p>
-          Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
-          platformách jako je <strong className="text-teal-400"><a href="/">Front End Mentor</a></strong>, <strong className="text-amber-400"><a href="/">Codepen</a></strong> nebo třeba <strong className="text-sky-400"><a href="/">I Code This</a></strong>. Většinou se jedná o komponenty, challenge které jsem si vybral a vytvořil je.
+          Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na
+          mém profilu na platformách jako je{" "}
+          <strong className="text-teal-400">
+            <a href="/">Front End Mentor</a>
+          </strong>
+          ,{" "}
+          <strong className="text-amber-400">
+            <a href="/">Codepen</a>
+          </strong>{" "}
+          nebo třeba{" "}
+          <strong className="text-sky-400">
+            <a href="/">I Code This</a>
+          </strong>
+          . Většinou se jedná o komponenty, challenge které jsem si vybral a
+          vytvořil je.
         </p>
       </section>
     </section>
