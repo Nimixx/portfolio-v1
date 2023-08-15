@@ -11,7 +11,7 @@ export default function Resume() {
             href="/"
             target="_self"
             rel="noopener noreferrer"
-            aria-label="show resume"
+            aria-label="show resume online in PDF format"
           >
             <Paperclip className="h-[1.2rem] w-[1.2rem]" />
           </a>

@@ -7,7 +7,6 @@ export default function Social() {
       <li>
         <Link link="https://github.com/Nimixx" target="_blank" ariaLabel="Visit Nimixx on GitHub">
           <Github className="h-4 w-4 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
-          <span className='hidden'>Github</span>
         </Link>
       </li>
       <li>
