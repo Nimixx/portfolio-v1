@@ -1,6 +1,6 @@
 # Nimixx.dev
 
-[![](https://ik.imagekit.io/ljtbrc2pd/Projects/nimixx-dark.png?updatedAt=1692008047424)](https://www.nimixx.dev/)
+[![](https://github.com/Nimixx/portfolio-v2/assets/51626851/cccca2ec-5fee-4be9-9f77-6f3defef32b9)](https://www.nimixx.dev/)
 
 This project was build with modern stack and on this website you can find some information about me and also some of my projects. 
 
