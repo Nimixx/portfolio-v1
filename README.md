@@ -25,13 +25,13 @@ In this project i try to write maintaible and clean code as i can in time. I try
 
 ```tsx
 <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
-              {project.technologies.map((tech, idx) => (
-                <li
-                  key={idx}
-                  className={`${technologyColors[tech] || 'text-gray-600 dark:text-gray-500'}`}
-                >
-                  <strong>{tech}</strong>
-                </li>
-              ))}
-            </ul>
+  {project.technologies.map((tech, idx) => (
+    <li
+      key={idx}
+      className={`${technologyColors[tech] || 'text-gray-600 dark:text-gray-500'}`}
+    >
+      <strong>{tech}</strong>
+    </li>
+  ))}
+</ul>
 ```
