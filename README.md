@@ -4,6 +4,8 @@
 
 This project was build with modern stack and on this website you can find some information about me and also some of my projects. 
 
+[Live web](https://www.nimixx.dev/ "Live web")
+
 #### TechSutck
 
 For my project iam usualy pick the stuck where i can chill in code.
