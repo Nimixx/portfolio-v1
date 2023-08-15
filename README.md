@@ -1,8 +1,8 @@
-#Nimixx.dev
+# Nimixx.dev
 
 This project was build with modern stack and on this website you can find some information about me and also some of my projects. 
 
-####TechSutck
+#### TechSutck
 
 For my project iam usualy pick the stuck where i can chill in code.
 
@@ -10,7 +10,7 @@ For my project iam usualy pick the stuck where i can chill in code.
 - [Typescript](https://www.typescriptlang.org/ "Typescript")
 - [TailwindCSS](https://tailwindcss.com/ "TailwindCSS")
 
-####Libraries
+#### Libraries
 
 - [shadcnui](https://ui.shadcn.com/ "shadcnui")
 - [CVA](https://cva.style/docs/getting-started/installation "CVA")
