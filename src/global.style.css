@@ -34,3 +34,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 }
+
+.avatar {
+  content-visibility: auto;
+}
