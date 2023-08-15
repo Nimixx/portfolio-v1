@@ -69,6 +69,7 @@ export default function Archive() {
                   className="text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
                   link={project.link}
                   target="_blank"
+                  ariaLabel='Link to Github page of my project'
                 >
                   {project.github}
                 </Link>
@@ -78,6 +79,7 @@ export default function Archive() {
                 <Link
                   link={project.statusLink}
                   target="_blank"
+                  ariaLabel='Link to live website of my project'
                   className={
                     project.statusLink === '/'
                       ? 'pointer-events-none text-rose-500 dark:text-rose-400 '

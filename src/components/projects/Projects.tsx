@@ -58,7 +58,7 @@ export default function Projects() {
             </Link>
           </div>
           <div className="flex flex-col justify-center space-y-5">
-            <h4 className="text-2xl font-bold">{project.title}</h4>
+            <h3 className="text-2xl font-bold">{project.title}</h3>
             <section className="flex items-center gap-2">
               <Link className="block xl:hidden" link={project.githubLink} target="_blank" ariaLabel='Link to Github pager of my project'>
                 <Github />
@@ -68,7 +68,7 @@ export default function Projects() {
               </Link>
             </section>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
-            <h5 className="text-xl font-semibold">Technologie</h5>
+            <h4 className="text-xl font-semibold">Technologie</h4>
             <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
                 <li
