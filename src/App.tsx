@@ -1,4 +1,3 @@
-import './global.style.css'
 import AppLayout from './layouts/AppLayout'
 import ContentLayout from './layouts/ContentLayout'
 import { ThemeProvider } from './layouts/theme-provider'
