@@ -67,7 +67,7 @@ export default function Projects() {
               </Link>
             </section>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
-            <h6 className="text-xl font-semibold">Technologie</h6>
+            <h5 className="text-xl font-semibold">Technologie</h5>
             <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
                 <li
