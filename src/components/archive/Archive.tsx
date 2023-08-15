@@ -8,7 +8,6 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { Balancer } from 'react-wrap-balancer'
 
 const projects = [
   {
@@ -95,8 +94,7 @@ export default function Archive() {
         </TableBody>
       </Table>
       <section className="text-gray-600 dark:text-gray-400 ">
-        <Balancer>
-          <p>
+        <p>
             Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
             platformách jako je{' '}
             <strong className="text-teal-400">
@@ -115,8 +113,7 @@ export default function Archive() {
               </Link>
             </strong>
             . Většinou se jedná o komponenty, challenge které jsem si vybral a vytvořil je.
-          </p>
-        </Balancer>
+        </p>
       </section>
     </section>
   )

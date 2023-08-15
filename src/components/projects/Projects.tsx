@@ -1,6 +1,5 @@
 import { Code2, Github, Globe } from 'lucide-react'
 import Link from '../ui/link'
-import { Balancer } from 'react-wrap-balancer'
 
 const projects = [
   {
@@ -82,9 +81,9 @@ export default function Projects() {
                 <Globe className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
               </Link>
             </section>
-            <Balancer>
-              <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
-            </Balancer>
+            <p className="text-gray-600 dark:text-gray-400">
+              {project.description}
+            </p>
             <h4 className="text-xl font-semibold">Technologie</h4>
             <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
