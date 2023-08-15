@@ -38,14 +38,47 @@ module.exports = {
     },
   },
 
-  plugins: [require('tailwindcss-animate', 'prettier-plugin-tailwindcss',), plugin(function({ addUtilities }) {
+  plugins: [
+    require('tailwindcss-animate', 'prettier-plugin-tailwindcss'),
+    plugin(function ({ addUtilities, addComponents }) {
+      const scrollBar = {
+        '.scrollbar-light': {
+          '&::-webkit-scrollbar': {
+            width: '8px',
+            zIndex: '50',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: '#F4F4F5',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: '#cccccc',
+            borderRadius: '24px',
+          },
+        },
+        '.scrollbar-dark': {
+          '&::-webkit-scrollbar': {
+            width: '8px',
+            zIndex: '50',
+          },
+          '&::-webkit-scrollbar-track': {
+            background: '#09090B',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: '#6f7782',
+          },
+        },
+      }
 
-    const newUtilities = {
-      '.balance': {
-        'text-wrap': 'balance',
-      },
-    }
+      const newUtilities = {
+        '.balance': {
+          'text-wrap': 'balance',
+        },
+      }
 
-    addUtilities(newUtilities)
-  })], 
+      addUtilities(newUtilities)
+      addComponents(scrollBar, {
+        variants: ['responsive', 'hover'],
+      })
+    }),
+  ],
 }
