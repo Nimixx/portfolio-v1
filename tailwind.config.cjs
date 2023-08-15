@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line no-undef
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -33,5 +37,15 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate', 'prettier-plugin-tailwindcss')],
+
+  plugins: [require('tailwindcss-animate', 'prettier-plugin-tailwindcss',), plugin(function({ addUtilities }) {
+
+    const newUtilities = {
+      '.balance': {
+        'text-wrap': 'balance',
+      },
+    }
+
+    addUtilities(newUtilities)
+  })], 
 }

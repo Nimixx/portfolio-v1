@@ -1,5 +1,5 @@
-import { Wallpaper } from 'lucide-react';
-import Link from '../ui/link';
+import { Wallpaper } from 'lucide-react'
+import Link from '../ui/link'
 
 const courses = [
   {
@@ -17,7 +17,7 @@ const courses = [
     url: 'https://www.joyofreact.com/',
     instructor: 'Jonas Schmedtmann',
   },
-];
+]
 
 export default function Courses() {
   return (
@@ -41,5 +41,5 @@ export default function Courses() {
         ))}
       </ul>
     </section>
-  );
+  )
 }

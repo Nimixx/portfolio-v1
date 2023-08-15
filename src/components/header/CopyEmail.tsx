@@ -20,7 +20,12 @@ export default function CopyEmail() {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button onClick={copyEmailToClipboard} variant="outline" size="icon" aria-label="copy contact email button">
+          <Button
+            onClick={copyEmailToClipboard}
+            variant="outline"
+            size="icon"
+            aria-label="copy contact email button"
+          >
             <Mail className="h-[1.2rem] w-[1.2rem] dark:text-indigo-400" />
           </Button>
         </TooltipTrigger>

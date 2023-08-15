@@ -12,7 +12,11 @@ export default function Contacts() {
         Pokud byste se mnou chtěli něco probrat, nebo máte nějaký nápad na spolupráci, neváhejte mě
         kontaktovat na <strong className="text-zinc-950 dark:text-white">Emailu</strong> nebo pomocí{' '}
         <strong className="text-blue-500 dark:text-blue-400">
-          <Link link="https://www.linkedin.com/in/tadeasthelen/" target="_blank" ariaLabel='My LinkedIn profile link'>
+          <Link
+            link="https://www.linkedin.com/in/tadeasthelen/"
+            target="_blank"
+            ariaLabel="My LinkedIn profile link"
+          >
             LinkedIn
           </Link>
         </strong>

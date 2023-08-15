@@ -7,7 +7,7 @@ export default function Hero() {
           Tadeas
           <span className="text-orange-300 dark:text-indigo-400">{'}'}</span>
         </h2>
-        <h6 className="text-2xl text-gray-600 dark:text-gray-400">Junior Front End Developer</h6>
+        <h3 className="text-2xl text-gray-600 dark:text-gray-400">Junior Front End Developer</h3>
       </article>
       <svg className="dark:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

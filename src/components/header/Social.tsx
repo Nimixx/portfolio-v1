@@ -10,12 +10,20 @@ export default function Social() {
         </Link>
       </li>
       <li>
-        <Link link="https://twitter.com/NimixxDev" target="_blank" ariaLabel="Visit Nimixx on Twitter">
+        <Link
+          link="https://twitter.com/NimixxDev"
+          target="_blank"
+          ariaLabel="Visit Nimixx on Twitter"
+        >
           <Twitter className="h-5 w-5 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
         </Link>
       </li>
       <li>
-        <Link link="https://www.linkedin.com/in/tadeasthelen/" target="_blank" ariaLabel="Visit Nimixx on LinkedIn">
+        <Link
+          link="https://www.linkedin.com/in/tadeasthelen/"
+          target="_blank"
+          ariaLabel="Visit Nimixx on LinkedIn"
+        >
           <Linkedin className="h-5 w-5 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
         </Link>
       </li>

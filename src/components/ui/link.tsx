@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 interface LinkProps {
-  children?: React.ReactNode;
-  link?: string;
-  target?: string;
-  className?: string;
-  ariaLabel?: string; // Add an ariaLabel prop
+  children?: React.ReactNode
+  link?: string
+  target?: string
+  className?: string
+  ariaLabel?: string // Add an ariaLabel prop
 }
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
@@ -21,8 +21,8 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       >
         {children}
       </a>
-    );
-  }
-);
+    )
+  },
+)
 
-export default Link;
+export default Link
