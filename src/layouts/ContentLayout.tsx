@@ -5,7 +5,7 @@ interface ContentLayoutProps {
 export default function ContentLayout({ children }: ContentLayoutProps) {
   return (
     <section className="w-full">
-      <article className="mx-auto w-full px-5 lg:w-2/3 2xl:w-1/2 lg:px-0 mt-5">{children}</article>
+      <article className="mx-auto mt-5 w-full px-5 lg:w-2/3 lg:px-0 2xl:w-1/2">{children}</article>
     </section>
   )
 }

@@ -68,7 +68,7 @@ export default function Projects() {
             </section>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
             <h6 className="text-xl font-semibold">Technologie</h6>
-            <ul className="flex items-center justify-start gap-5 text-gray-600 dark:text-gray-500 flex-wrap">
+            <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
                 <li
                   key={idx}
