@@ -1,8 +1,8 @@
-# Nimixx.dev
+# FAQ card
 
 ![](https://github.com/Nimixx/portfolio-v2/assets/51626851/87373dc1-7b46-41c0-9b2e-f88221f03c63)
 
-This project was build with modern stack and on this website you can find some information about me and also some of my projects. 
+This project was build with classic basic stuck for modern app
 
 [Live web](https://www.nimixx.dev/ "Live web")
 
@@ -10,16 +10,14 @@ This project was build with modern stack and on this website you can find some i
 
 For my project iam usualy pick the stuck where i can chill in code.
 
-- [React](https://react.dev/ "React")
-- [Typescript](https://www.typescriptlang.org/ "Typescript")
-- [TailwindCSS](https://tailwindcss.com/ "TailwindCSS")
-- [Vite](https://vitejs.dev/ "Vite")
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [Vite](https://vitejs.dev/)
 
 #### Libraries
 
-- [shadcnui](https://ui.shadcn.com/ "shadcnui")
-- [CVA](https://cva.style/docs/getting-started/installation "CVA")
-- [Lucide Icons](https://lucide.dev/icons/ "Lucide Icons")
+- [Lucide Icons](https://lucide.dev/icons/)
 
 #### What i try to learn
 
