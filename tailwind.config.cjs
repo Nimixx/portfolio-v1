@@ -40,7 +40,7 @@ module.exports = {
 
   plugins: [
     require('tailwindcss-animate', 'prettier-plugin-tailwindcss'),
-    plugin(function ({ addUtilities, addComponents }) {
+    plugin(function ({ addComponents }) {
       const scrollBar = {
         '.scrollbar-light': {
           '&::-webkit-scrollbar': {
@@ -69,13 +69,6 @@ module.exports = {
         },
       }
 
-      const newUtilities = {
-        '.balance': {
-          'text-wrap': 'balance',
-        },
-      }
-
-      addUtilities(newUtilities)
       addComponents(scrollBar, {
         variants: ['responsive', 'hover'],
       })
