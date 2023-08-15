@@ -12,7 +12,7 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ children, link, target, className, ariaLabel }, ref) => {
     return (
       <a
-        className={className}
+        className={`rounded-sm outline-offset-2 ${className}`}
         href={link}
         target={target}
         rel="noopener noreferrer"

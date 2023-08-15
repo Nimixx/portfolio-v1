@@ -49,13 +49,13 @@ export default function Projects() {
               ariaLabel="Link to live website of my project"
             />
             <Link
-              className="absolute -right-16 -top-16"
+              className="group absolute -right-16 -top-16 focus:outline-none"
               link={project.githubLink}
               target="_blank"
               ariaLabel="Link to Github pager of my project"
             >
               <div
-                className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600`}
+                className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 group-focus:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600 group-focus:dark:bg-zinc-600`}
               />
               <Github
                 className={`pointer-events-none absolute bottom-5 left-6 h-8 w-8 text-zinc-200`}
