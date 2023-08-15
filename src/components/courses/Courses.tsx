@@ -27,7 +27,7 @@ export default function Courses() {
         <span>Kurzy</span>
       </h2>
         <p className="text-gray-600 dark:text-gray-400">
-          Většinu věcí jsem se naučil sám tím že jsem je prostě zkoušel a zkoušel. Některé věci jsem
+          Většinu věcí jsem se naučil sám tím, že jsem je prostě zkoušel a zkoušel. Některé věci jsem
           se naučil z kurzů, případně z článků a videí na internetu.
         </p>
       <ul className="flex flex-col items-start justify-start gap-2 text-gray-600 dark:text-gray-400">

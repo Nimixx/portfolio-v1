@@ -22,7 +22,7 @@ export default function Contacts() {
             </Link>
           </strong>
           . Aktuálně hledám práci jako{' '}
-          <strong className="text-amber-500 dark:text-amber-300">Frontend Developer</strong>
+          <strong className="text-amber-500 dark:text-amber-300">Frontend Developer</strong>.
       </p>
     </section>
   )

@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'NIMIXX',
     description:
-      'Moje osobní portfolio, které jsi právě prohlížíš. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.',
+      'Moje osobní portfolio, které si právě prohlížíte. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'shadcnui'],
     githubLink: 'https://github.com/project2',
     liveWebLink: 'https://nimixx.dev/',
