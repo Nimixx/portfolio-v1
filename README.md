@@ -11,6 +11,7 @@ For my project iam usualy pick the stuck where i can chill in code.
 - [React](https://react.dev/ "React")
 - [Typescript](https://www.typescriptlang.org/ "Typescript")
 - [TailwindCSS](https://tailwindcss.com/ "TailwindCSS")
+- [Vite](https://vitejs.dev/ "Vite")
 
 #### Libraries
 
@@ -18,4 +19,19 @@ For my project iam usualy pick the stuck where i can chill in code.
 - [CVA](https://cva.style/docs/getting-started/installation "CVA")
 - [Lucide Icons](https://lucide.dev/icons/ "Lucide Icons")
 
+#### What i try to learn
 
+In this project i try to write maintaible and clean code as i can in time. I try to use function like a map of object and also modern css.
+
+```tsx
+<ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
+              {project.technologies.map((tech, idx) => (
+                <li
+                  key={idx}
+                  className={`${technologyColors[tech] || 'text-gray-600 dark:text-gray-500'}`}
+                >
+                  <strong>{tech}</strong>
+                </li>
+              ))}
+            </ul>
+```
