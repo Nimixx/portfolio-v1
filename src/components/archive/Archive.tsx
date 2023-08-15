@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { Balancer } from 'react-wrap-balancer'
 
 const projects = [
   {
@@ -94,26 +95,28 @@ export default function Archive() {
         </TableBody>
       </Table>
       <section className="text-gray-600 dark:text-gray-400 ">
-        <p>
-          Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
-          platformách jako je{' '}
-          <strong className="text-teal-400">
-            <Link link="https://www.frontendmentor.io/profile/Nimixx">Front End Mentor</Link>
-          </strong>
-          ,{' '}
-          <strong className="text-amber-400">
-            <Link link="https://codepen.io/nimixx" target="_blank">
-              Codepen
-            </Link>
-          </strong>{' '}
-          nebo třeba{' '}
-          <strong className="text-sky-400">
-            <Link link="https://icodethis.com/Nimixx" target="_blank">
-              I Code This
-            </Link>
-          </strong>
-          . Většinou se jedná o komponenty, challenge které jsem si vybral a vytvořil je.
-        </p>
+        <Balancer>
+          <p>
+            Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
+            platformách jako je{' '}
+            <strong className="text-teal-400">
+              <Link link="https://www.frontendmentor.io/profile/Nimixx">Front End Mentor</Link>
+            </strong>
+            ,{' '}
+            <strong className="text-amber-400">
+              <Link link="https://codepen.io/nimixx" target="_blank">
+                Codepen
+              </Link>
+            </strong>{' '}
+            nebo třeba{' '}
+            <strong className="text-sky-400">
+              <Link link="https://icodethis.com/Nimixx" target="_blank">
+                I Code This
+              </Link>
+            </strong>
+            . Většinou se jedná o komponenty, challenge které jsem si vybral a vytvořil je.
+          </p>
+        </Balancer>
       </section>
     </section>
   )

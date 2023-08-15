@@ -1,5 +1,6 @@
 import { Code2, Github, Globe } from 'lucide-react'
 import Link from '../ui/link'
+import { Balancer } from 'react-wrap-balancer'
 
 const projects = [
   {
@@ -49,13 +50,13 @@ export default function Projects() {
               ariaLabel="Link to live website of my project"
             />
             <Link
-              className="absolute -right-16 -top-16"
+              className="group absolute -right-16 -top-16 focus:outline-none"
               link={project.githubLink}
               target="_blank"
               ariaLabel="Link to Github pager of my project"
             >
               <div
-                className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600`}
+                className={`relative h-32 w-32 rotate-45  bg-zinc-400 hover:bg-zinc-500 group-focus:bg-zinc-500 dark:bg-zinc-700 dark:hover:bg-zinc-600 group-focus:dark:bg-zinc-600`}
               />
               <Github
                 className={`pointer-events-none absolute bottom-5 left-6 h-8 w-8 text-zinc-200`}
@@ -81,7 +82,9 @@ export default function Projects() {
                 <Globe className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
               </Link>
             </section>
-            <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+            <Balancer>
+              <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+            </Balancer>
             <h4 className="text-xl font-semibold">Technologie</h4>
             <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (

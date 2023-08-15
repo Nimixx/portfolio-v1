@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(221, 221, 221);
-  border-radius: 1rem;
-} */
-
 .header-show {
   transform: translateY(0);
   transition: transform 0.3s ease-in-out;

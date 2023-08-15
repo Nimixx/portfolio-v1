@@ -47,7 +47,7 @@ export default function Footer() {
       <section className="mx-auto my-5 flex w-full flex-col items-start justify-between gap-5 lg:w-2/3 lg:flex-row xl:mt-14 2xl:w-1/2">
         <section className="flex w-20 flex-col items-center justify-center gap-5">
           <img
-            className="avatar rounded-lg bg-zinc-200/50 dark:bg-zinc-700/50 "
+            className="avatar rounded-lg bg-zinc-200/50 shadow-inner dark:bg-zinc-700/50"
             src="logo.webp"
             alt="Creator draw avatar"
             width="100%"
