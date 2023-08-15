@@ -98,19 +98,19 @@ export default function Archive() {
           Jsou věci, které nemám ani v archivu ale dá se na ně podívat přímo na mém profilu na
           platformách jako je{' '}
           <strong className="text-teal-400">
-            <Link link="https://www.frontendmentor.io/profile/Nimixx" target="_blank" ariaLabel='My FrontEnd Mentor profile link'>
+            <Link link="https://www.frontendmentor.io/profile/Nimixx">
               Front End Mentor
             </Link>
           </strong>
           ,{' '}
           <strong className="text-amber-400">
-            <Link link="https://codepen.io/nimixx" target="_blank" ariaLabel='My Codepan profile link'>
+            <Link link="https://codepen.io/nimixx" target="_blank">
               Codepen
             </Link>
           </strong>{' '}
           nebo třeba{' '}
           <strong className="text-sky-400">
-            <Link link="https://icodethis.com/Nimixx" target="_blank" ariaLabel='My I Code This profile link'>
+            <Link link="https://icodethis.com/Nimixx" target="_blank">
               I Code This
             </Link>
           </strong>
