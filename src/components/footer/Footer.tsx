@@ -39,7 +39,6 @@ const links = {
 }
 
 const year = new Date().getFullYear()
-const displayYear = year > 2022 ? `2022 - ${year}` : year
 
 export default function Footer() {
   return (
@@ -89,9 +88,9 @@ export default function Footer() {
         <section className="flex flex-row items-start justify-start gap-2 lg:flex-col">
           <span className="flex gap-2 text-gray-500">
             <span>&copy;</span>
-            {displayYear} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
+            {year} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
           </span>
-          <p className="text-gray-500 xl:text-lg">nimixx.dev@proton.me</p>
+          <p className="text-gray-500">nimixx.dev@proton.me</p>
         </section>
       </section>
     </footer>

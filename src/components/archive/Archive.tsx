@@ -14,33 +14,33 @@ const projects = [
     name: 'Social Dashboard',
     github: <Github />,
     link: 'https://github.com/Nimixx/Social-Dashboard',
-    status: 'In progress',
-    statusLink: '/',
-    description: 'Challenge z Frontend Mentor',
+    status: 'Github Pages',
+    statusLink: 'https://nimixx.github.io/Social-Dashboard/',
+    description: 'Malá komponenta z Frontend Mentor',
   },
   {
     name: 'FAQ Accordion',
     github: <Github />,
     link: 'https://github.com/Nimixx/accordion-fm',
-    status: 'Live',
+    status: 'Github Pages',
     statusLink: 'https://nimixx.github.io/accordion-fm/',
-    description: 'Challenge z Frontend Mentor',
+    description: 'FAQ karta z Frontend Mentor',
   },
   {
     name: 'Score card',
     github: <Github />,
     link: 'https://github.com/Nimixx/Summary-card-component',
-    status: 'Live',
+    status: 'Github Pages',
     statusLink: 'https://nimixx.github.io/Summary-card-component/',
-    description: 'Challenge z Frontend Mentor',
+    description: 'Karta s výsledky z měření. Challenge z Frontend Mentor',
   },
   {
     name: 'QR Code',
     github: <Github />,
     link: 'https://github.com/Nimixx/QR-Code',
-    status: 'Live',
+    status: 'Github Pages',
     statusLink: 'https://nimixx.github.io/QR-Code/',
-    description: 'Challenge z Frontend Mentor',
+    description: 'Velmi jednoduchá QR karta',
   },
 ]
 
@@ -54,10 +54,10 @@ export default function Archive() {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[200px]">Project</TableHead>
+            <TableHead className="w-[200px]">Projekt</TableHead>
             <TableHead>Github</TableHead>
-            <TableHead>Description</TableHead>
-            <TableHead className="text-right">Website</TableHead>
+            <TableHead>Popis</TableHead>
+            <TableHead className="text-right">Hostováno</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -95,24 +95,25 @@ export default function Archive() {
       </Table>
       <section className="text-gray-600 dark:text-gray-400 ">
         <p>
-            Jsou projekty, které nemám ani v archivu, ale je možné se na ně podívat přímo na mém profilu na
-            platformách jako je{' '}
-            <strong className="text-teal-400">
-              <Link link="https://www.frontendmentor.io/profile/Nimixx">Front End Mentor</Link>
-            </strong>
-            ,{' '}
-            <strong className="text-amber-400">
-              <Link link="https://codepen.io/nimixx" target="_blank">
-                Codepen
-              </Link>
-            </strong>{' '}
-            nebo třeba{' '}
-            <strong className="text-sky-400">
-              <Link link="https://icodethis.com/Nimixx" target="_blank">
-                I Code This
-              </Link>
-            </strong>
-            . Většinou se jedná o komponenty, challenge, které jsem si vybral a vytvořil je podle zadání.
+          Jsou projekty, které nemám ani v archivu, ale je možné se na ně podívat přímo na mém
+          profilu na platformách jako je{' '}
+          <strong className="text-teal-400">
+            <Link link="https://www.frontendmentor.io/profile/Nimixx">Front End Mentor</Link>
+          </strong>
+          ,{' '}
+          <strong className="text-amber-400">
+            <Link link="https://codepen.io/nimixx" target="_blank">
+              Codepen
+            </Link>
+          </strong>{' '}
+          nebo třeba{' '}
+          <strong className="text-sky-400">
+            <Link link="https://icodethis.com/Nimixx" target="_blank">
+              I Code This
+            </Link>
+          </strong>
+          . Většinou se jedná o komponenty, challenge, které jsem si vybral a vytvořil je podle
+          zadání.
         </p>
       </section>
     </section>
