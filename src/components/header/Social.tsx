@@ -6,7 +6,7 @@ export default function Social() {
     <ul className=" flex items-center gap-2 text-gray-500 dark:text-gray-400">
       <li>
         <Link link="https://github.com/Nimixx" target="_blank" ariaLabel="Visit Nimixx on GitHub">
-          <Github className="h-5 w-5 ring-offset-white hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5 " />
+          <Github className="easy h-5 w-5 ring-offset-white transition-colors duration-200 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5 " />
         </Link>
       </li>
       <li>
@@ -15,7 +15,7 @@ export default function Social() {
           target="_blank"
           ariaLabel="Visit Nimixx on Twitter"
         >
-          <Twitter className="h-5 w-5 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
+          <Twitter className="easy h-5 w-5 transition-colors duration-200 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
         </Link>
       </li>
       <li>
@@ -24,7 +24,7 @@ export default function Social() {
           target="_blank"
           ariaLabel="Visit Nimixx on LinkedIn"
         >
-          <Linkedin className="h-5 w-5 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
+          <Linkedin className="easy h-5 w-5 transition-colors duration-200 hover:text-zinc-950 dark:hover:text-white sm:h-5 sm:w-5" />
         </Link>
       </li>
     </ul>

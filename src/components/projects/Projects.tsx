@@ -7,7 +7,7 @@ const projects = [
     description:
       'Menší projekt, který jsem vytvořil v rámci výuky Reactu. Jedná se o jednoduchou aplikaci, která pomocí GitHub API vyhledává uživatele a zobrazuje jejich profilové informace. Dále je možné zobrazit uživatelovy repozitáře a podrobnější informace o nich. Design pochází z challenge na stránce Frontend Mentor.',
     technologies: ['React', 'TypeScript', 'TailwindCSS'],
-    githubLink: 'https://github.com/project1',
+    githubLink: 'https://github.com/Nimixx/devfinder',
     liveWebLink: 'https://devfinder-ten-zeta.vercel.app/',
     bgImage:
       'bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/devFinder-light.png?updatedAt=1692008333169)] dark:bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/devFinder-dark.png?updatedAt=1692008333235)]',
@@ -17,7 +17,7 @@ const projects = [
     description:
       'Moje osobní portfolio, které si právě prohlížíte. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'shadcnui'],
-    githubLink: 'https://github.com/project2',
+    githubLink: 'https://github.com/Nimixx/portfolio-v2',
     liveWebLink: 'https://nimixx.dev/',
     bgImage:
       'bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/nimixx-light.png?updatedAt=1692007936812)] dark:bg-[url(https://ik.imagekit.io/ljtbrc2pd/Projects/nimixx-dark.png?updatedAt=1692008047424)]',
@@ -85,13 +85,13 @@ export default function Projects() {
             </section>
             <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
             <h4 className="text-xl font-semibold">Technologie</h4>
-            <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
+            <ul className="flex flex-wrap items-center justify-start gap-5 text-sm text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
                 <li
                   key={idx}
                   className={`${technologyColors[tech] || 'text-gray-600 dark:text-gray-500'}`}
                 >
-                  <strong>{tech}</strong>
+                  <strong className="font-normal">/ {tech} /</strong>
                 </li>
               ))}
             </ul>

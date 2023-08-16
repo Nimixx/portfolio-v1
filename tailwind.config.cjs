@@ -68,7 +68,7 @@ module.exports = {
           },
         },
       }
-      
+
       addComponents(scrollBar, {
         variants: ['responsive', 'hover'],
       })

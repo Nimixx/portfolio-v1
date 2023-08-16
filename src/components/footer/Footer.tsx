@@ -1,6 +1,7 @@
 import { Heart, Atom, Play } from 'lucide-react'
 import Social from '../header/Social'
 import Link from '../ui/link'
+import { useToast } from '@/components/ui/use-toast'
 
 const links = {
   Sleduji: [
@@ -38,9 +39,20 @@ const links = {
   ],
 }
 
-const year = new Date().getFullYear()
-
 export default function Footer() {
+  const year = new Date().getFullYear()
+  const { toast } = useToast()
+
+  const copyEmailToClipboard = () => {
+    const email = 'nimixx.dev@proton.me'
+    navigator.clipboard.writeText(email).then(() => {
+      toast({
+        title: 'Email zkopírován do schránky',
+        description: email,
+      })
+    })
+  }
+
   return (
     <footer className="mt-14 flex w-full items-center justify-center border-t border-zinc-200 bg-zinc-200/20 px-5 dark:border-zinc-900 dark:bg-zinc-900/10 xl:h-96 xl:px-0">
       <section className="mx-auto my-5 flex w-full flex-col items-start justify-between gap-5 lg:w-2/3 lg:flex-row xl:mt-14 2xl:w-1/2">
@@ -86,7 +98,9 @@ export default function Footer() {
           </section>
         ))}
         <section className="flex  flex-col items-start justify-start gap-2">
-          <strong className=" text-gray-600 dark:text-gray-300">nimixx.dev@proton.me</strong>
+          <button className="ext-gray-600 dark:text-gray-300" onClick={copyEmailToClipboard}>
+            <strong>nimixx.dev@proton.me</strong>
+          </button>
           <span className="flex gap-2 text-gray-400 dark:text-gray-500">
             <span>&copy;</span>
             {year} <strong className="font-medium">Nimixx.dev</strong>

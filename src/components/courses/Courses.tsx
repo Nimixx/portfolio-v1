@@ -9,12 +9,12 @@ const courses = [
   },
   {
     name: 'HTML, CSS a JavaScript',
-    url: 'https://www.joyofreact.com/',
+    url: 'https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/',
     instructor: 'Jonas Schmedtmann',
   },
   {
     name: 'Sass & Animation',
-    url: 'https://www.joyofreact.com/',
+    url: 'https://www.udemy.com/course/advanced-css-and-sass/',
     instructor: 'Jonas Schmedtmann',
   },
 ]
@@ -26,10 +26,10 @@ export default function Courses() {
         <Wallpaper className="text-emerald-500 dark:text-emerald-300" />
         <span>Kurzy</span>
       </h2>
-        <p className="text-gray-600 dark:text-gray-400">
-          Většinu věcí jsem se naučil sám tím, že jsem je prostě zkoušel a zkoušel. Některé věci jsem
-          se naučil z kurzů, případně z článků a videí na internetu.
-        </p>
+      <p className="text-gray-600 dark:text-gray-400">
+        Většinu věcí jsem se naučil sám tím, že jsem je prostě zkoušel a zkoušel. Některé věci jsem
+        se naučil z kurzů, případně z článků a videí na internetu.
+      </p>
       <ul className="flex flex-col items-start justify-start gap-2 text-gray-600 dark:text-gray-400">
         {courses.map((course, index) => (
           <li key={index} className="flex items-center space-x-2">

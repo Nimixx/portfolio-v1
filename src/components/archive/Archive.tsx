@@ -100,18 +100,6 @@ export default function Archive() {
           <strong className="text-teal-400">
             <Link link="https://www.frontendmentor.io/profile/Nimixx">Front End Mentor</Link>
           </strong>
-          ,{' '}
-          <strong className="text-amber-400">
-            <Link link="https://codepen.io/nimixx" target="_blank">
-              Codepen
-            </Link>
-          </strong>{' '}
-          nebo třeba{' '}
-          <strong className="text-sky-400">
-            <Link link="https://icodethis.com/Nimixx" target="_blank">
-              I Code This
-            </Link>
-          </strong>
           . Většinou se jedná o komponenty, challenge, které jsem si vybral a vytvořil je podle
           zadání.
         </p>
