@@ -19,11 +19,11 @@ const projects = [
     description: 'Challenge z Frontend Mentor',
   },
   {
-    name: 'Fylo Landing Page',
+    name: 'FAQ Accordion',
     github: <Github />,
-    link: '/',
-    status: 'In progress',
-    statusLink: '/',
+    link: 'https://github.com/Nimixx/accordion-fm',
+    status: 'Live',
+    statusLink: 'https://nimixx.github.io/accordion-fm/',
     description: 'Challenge z Frontend Mentor',
   },
   {
