@@ -85,12 +85,20 @@ export default function Footer() {
             </ul>
           </section>
         ))}
-        <section className="flex flex-row items-start justify-start gap-2 lg:flex-col">
-          <span className="flex gap-2 text-gray-500">
+        <section className="flex  flex-col items-start justify-start gap-2">
+          <strong className=" text-gray-600 dark:text-gray-300">nimixx.dev@proton.me</strong>
+          <span className="flex gap-2 text-gray-400 dark:text-gray-500">
             <span>&copy;</span>
-            {year} <p className="text-gray-600 dark:text-gray-400">Nimixx.dev</p>
+            {year} <strong className="font-medium">Nimixx.dev</strong>
           </span>
-          <p className="text-gray-500">nimixx.dev@proton.me</p>
+
+          <Link
+            link="https://vercel.com/"
+            target="_blank"
+            className="text-gray-400 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-300"
+          >
+            Deploy on Vercel
+          </Link>
         </section>
       </section>
     </footer>

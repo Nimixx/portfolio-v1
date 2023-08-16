@@ -77,13 +77,13 @@ export default function Projects() {
                 link={project.liveWebLink}
                 target="_blank"
                 ariaLabel="Link to Github pager of my project"
+                className="flex items-center gap-1 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300"
               >
-                <Globe className="text-gray-500 hover:text-gray-600 dark:text-gray-300 hover:dark:text-gray-400" />
+                <Globe className="text-gray-600  dark:text-gray-400 " />
+                <p>Vercel</p>
               </Link>
             </section>
-            <p className="text-gray-600 dark:text-gray-400">
-              {project.description}
-            </p>
+            <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
             <h4 className="text-xl font-semibold">Technologie</h4>
             <ul className="flex flex-wrap items-center justify-start gap-5 text-gray-600 dark:text-gray-500">
               {project.technologies.map((tech, idx) => (
