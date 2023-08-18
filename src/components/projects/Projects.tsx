@@ -38,9 +38,9 @@ export default function Projects() {
         <span>Projekty</span>
       </h2>
       {projects.map((project, index) => (
-        <article key={index} className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+        <article key={index} className="grid grid-cols-1 gap-10 xl:grid-cols-2">
           <div
-            className={`relative h-32 rounded-xl lg:h-full ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 lg:flex`}
+            className={`relative h-32 rounded-xl lg:h-96 ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 lg:flex`}
           >
             <Link
               className={`absolute left-0 right-0 top-0 flex h-full w-full items-center justify-center text-4xl font-bold`}
