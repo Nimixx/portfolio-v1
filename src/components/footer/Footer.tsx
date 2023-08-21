@@ -44,7 +44,7 @@ export default function Footer() {
   const { toast } = useToast()
 
   const copyEmailToClipboard = () => {
-    const email = 'nimixx.dev@proton.me'
+    const email = 'tadeasthelen@proton.me'
     navigator.clipboard.writeText(email).then(() => {
       toast({
         title: 'Email zkopírován do schránky',

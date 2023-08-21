@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'NIMIXX',
     description:
-      'Moje osobní portfolio, které si právě prohlížíte. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních. Aplikace je nasazená na Vercelu.',
+      'Moje osobní portfolio, které si právě prohlížíte. Vytvořeno pomocí Reactu a TailwindCSS slouží k prezentaci mých projektů a dovedností. Design je vytvořen mnou a jeho hlavním cílem bylo vytvořit jednoduchou a přehlednou stránku, která bude dobře fungovat na všech zařízeních.',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'shadcnui'],
     githubLink: 'https://github.com/Nimixx/portfolio-v2',
     liveWebLink: 'https://nimixx.dev/',
@@ -40,7 +40,7 @@ export default function Projects() {
       {projects.map((project, index) => (
         <article key={index} className="grid grid-cols-1 gap-10 xl:grid-cols-2">
           <div
-            className={`relative h-32 rounded-xl lg:h-96 ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 lg:flex`}
+            className={`relative h-32 rounded-xl lg:h-80 ${project.bgImage} group hidden items-center justify-center overflow-hidden border border-zinc-200 bg-cover bg-center bg-no-repeat shadow-lg dark:border-zinc-700 lg:flex`}
           >
             <Link
               className={`absolute left-0 right-0 top-0 flex h-full w-full items-center justify-center text-4xl font-bold`}
