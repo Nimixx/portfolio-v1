@@ -4,6 +4,8 @@
 
 This project was build with modern stack and on this website you can find some information about me and also some of my projects.
 
+This is first version. At this time i start work on next version with more functions and new style.
+
 [Live web](https://www.nimixx.dev/ 'Live web')
 
 #### TechSutck
