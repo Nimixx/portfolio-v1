@@ -1,27 +1,21 @@
 import { Mail } from 'lucide-react'
 import { Button } from '../ui/button'
-import { useToast } from '@/components/ui/use-toast'
+
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import useCopyEmail from '@/hooks/useCopyEmail'
 
 export default function CopyEmail() {
-  const { toast } = useToast()
+  const copyEmailToClipboard = useCopyEmail();
 
-  const copyEmailToClipboard = () => {
-    const email = 'tadeasthelen@proton.me'
-    navigator.clipboard.writeText(email).then(() => {
-      toast({
-        title: 'Email zkopírován do schránky',
-        description: email,
-      })
-    })
-  }
-
+  const handleCopyEmail = () => {
+    copyEmailToClipboard('tadeasthelen@proton.me');
+  };
   return (
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
           <Button
-            onClick={copyEmailToClipboard}
+            onClick={handleCopyEmail}
             variant="outline"
             size="icon"
             aria-label="copy contact email button"

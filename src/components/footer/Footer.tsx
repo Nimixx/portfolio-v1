@@ -1,57 +1,17 @@
 import { Heart, Atom, Play } from 'lucide-react'
 import Social from '../header/Social'
 import Link from '../ui/link'
-import { useToast } from '@/components/ui/use-toast'
-
-const links = {
-  Sleduji: [
-    { text: 'Kevin Powell', url: 'https://www.youtube.com/@KevinPowell' },
-    {
-      text: 'Josh W Comeau',
-      url: 'https://www.joshwcomeau.com/tutorials/',
-    },
-    { text: 'Theo T3', url: 'https://www.youtube.com/@t3dotgg' },
-    {
-      text: 'Linux Experiment',
-      url: 'https://www.youtube.com/channel/UC5UAwBUum7CPN5buc-_N1Fw',
-    },
-    { text: 'System 79', url: 'https://pop.system76.com/' },
-  ],
-  Oblíbené: [
-    { text: 'React', url: 'https://reactjs.org/' },
-    { text: 'Next.js', url: 'https://nextjs.org/' },
-    { text: 'Astro', url: 'https://astro.build/' },
-    { text: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
-    { text: 'Vite', url: 'https://vitejs.dev/' },
-  ],
-  Poslouchám: [
-    { text: 'Chris Luno', url: 'https://www.youtube.com/@chrisluno' },
-    {
-      text: 'Nora En Puro',
-      url: 'https://www.youtube.com/channel/UCdUXAN90UQV4sxNehj5Vflw',
-    },
-    { text: 'Flavour Trip', url: 'https://www.youtube.com/@flavourtrip' },
-    { text: 'Sylvan Esso', url: 'https://www.youtube.com/@sylvanesso' },
-    {
-      text: 'Rachel K Collier',
-      url: 'https://www.youtube.com/@RachelKCollierRKC',
-    },
-  ],
-}
+import useCopyEmail from '@/hooks/useCopyEmail'
+import footerLinksData from './footerLinks.json';
 
 export default function Footer() {
   const year = new Date().getFullYear()
-  const { toast } = useToast()
 
-  const copyEmailToClipboard = () => {
-    const email = 'tadeasthelen@proton.me'
-    navigator.clipboard.writeText(email).then(() => {
-      toast({
-        title: 'Email zkopírován do schránky',
-        description: email,
-      })
-    })
-  }
+  const copyEmailToClipboard = useCopyEmail();
+
+  const handleCopyEmail = () => {
+    copyEmailToClipboard('tadeasthelen@proton.me');
+  };
 
   return (
     <footer className="mt-14 flex w-full items-center justify-center border-t border-zinc-200 bg-zinc-200/20 px-5 dark:border-zinc-900 dark:bg-zinc-900/10 xl:h-96 xl:px-0">
@@ -68,7 +28,7 @@ export default function Footer() {
           />
           <Social />
         </section>
-        {Object.entries(links).map(([category, categoryLinks], index) => (
+        {Object.entries(footerLinksData).map(([category, categoryLinks], index) => (
           <section key={index}>
             <h2 className="flex items-center gap-2 text-lg font-bold">
               {category}
@@ -98,7 +58,7 @@ export default function Footer() {
           </section>
         ))}
         <section className="flex  flex-col items-start justify-start gap-2">
-          <button className="ext-gray-600 dark:text-gray-300" onClick={copyEmailToClipboard}>
+          <button className="ext-gray-600 dark:text-gray-300" onClick={handleCopyEmail}>
             <strong>nimixx.dev@proton.me</strong>
           </button>
           <span className="flex gap-2 text-gray-400 dark:text-gray-500">

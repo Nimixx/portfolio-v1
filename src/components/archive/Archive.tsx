@@ -8,41 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-
-const projects = [
-  {
-    name: 'Social Dashboard',
-    github: <Github />,
-    link: 'https://github.com/Nimixx/Social-Dashboard',
-    status: 'Github Pages',
-    statusLink: 'https://nimixx.github.io/Social-Dashboard/',
-    description: 'Malá komponenta z Frontend Mentor',
-  },
-  {
-    name: 'FAQ Accordion',
-    github: <Github />,
-    link: 'https://github.com/Nimixx/accordion-fm',
-    status: 'Github Pages',
-    statusLink: 'https://nimixx.github.io/accordion-fm/',
-    description: 'FAQ karta z Frontend Mentor',
-  },
-  {
-    name: 'Score card',
-    github: <Github />,
-    link: 'https://github.com/Nimixx/Summary-card-component',
-    status: 'Github Pages',
-    statusLink: 'https://nimixx.github.io/Summary-card-component/',
-    description: 'Karta s výsledky z měření. Challenge z Frontend Mentor',
-  },
-  {
-    name: 'QR Code',
-    github: <Github />,
-    link: 'https://github.com/Nimixx/QR-Code',
-    status: 'Github Pages',
-    statusLink: 'https://nimixx.github.io/QR-Code/',
-    description: 'Velmi jednoduchá QR karta',
-  },
-]
+import projectsData from './projectsData.json'; 
 
 export default function Archive() {
   return (
@@ -61,7 +27,7 @@ export default function Archive() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {projects.map((project) => (
+        {projectsData.map((project) => (
             <TableRow key={project.name}>
               <TableCell className="font-medium">{project.name}</TableCell>
               <TableCell>
@@ -71,7 +37,7 @@ export default function Archive() {
                   target="_blank"
                   ariaLabel="Link to Github page of my project"
                 >
-                  {project.github}
+                  <Github />
                 </Link>
               </TableCell>
               <TableCell>{project.description}</TableCell>

@@ -1,19 +1,13 @@
 import { Contact2 } from 'lucide-react'
 import Link from '../ui/link'
-import { useToast } from '@/components/ui/use-toast'
+import useCopyEmail from '@/hooks/useCopyEmail'
 
 export default function Contacts() {
-  const { toast } = useToast()
+  const copyEmailToClipboard = useCopyEmail();
 
-  const copyEmailToClipboard = () => {
-    const email = 'tadeasthelen@proton.me'
-    navigator.clipboard.writeText(email).then(() => {
-      toast({
-        title: 'Email zkopírován do schránky',
-        description: email,
-      })
-    })
-  }
+  const handleCopyEmail = () => {
+    copyEmailToClipboard('tadeasthelen@proton.me');
+  };
 
   return (
     <section className="mt-14 flex w-full flex-col items-start space-y-5">
@@ -24,7 +18,7 @@ export default function Contacts() {
       <span className="text-gray-600 dark:text-gray-400">
         Pokud byste se mnou chtěli něco probrat, nebo máte nějaký nápad na spolupráci, neváhejte mě
         kontaktovat na{' '}
-        <button className="text-zinc-950 dark:text-white" onClick={copyEmailToClipboard}>
+        <button className="text-zinc-950 dark:text-white" onClick={handleCopyEmail}>
           <strong>Emailu</strong>
         </button>{' '}
         nebo pomocí{' '}
@@ -44,4 +38,3 @@ export default function Contacts() {
   )
 }
 
-//TODO Think about email functionality here
